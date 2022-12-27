@@ -379,7 +379,7 @@
             <mxPoint x="911" y="292" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-Yp7aiIqVqqTGb4Fy1kx-121" value="Estatus contrato" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="-Yp7aiIqVqqTGb4Fy1kx-121" value="Estatus SERVICIO" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="750" y="287" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="-Yp7aiIqVqqTGb4Fy1kx-125" value="precio" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
