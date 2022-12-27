@@ -12,19 +12,19 @@ create database gacaproy
   user sys identified by system2
   user system identified by system2
   logfile group 1 (
-    '/unam-bda/d04/app/oracle/oradata/GACAPROY/redo01a.log',
-    '/unam-bda/d05/app/oracle/oradata/GACAPROY/redo01b.log',
-    '/unam-bda/d06/app/oracle/oradata/GACAPROY/redo01c.log') size 512m
+    '/unam-bda/d10/app/oracle/oradata/GACAPROY/redo01a.log',
+    '/unam-bda/d11/app/oracle/oradata/GACAPROY/redo01b.log',
+    '/unam-bda/d12/app/oracle/oradata/GACAPROY/redo01c.log') size 512m
 blocksize 512,
   group 2 (
-    '/unam-bda/d04/app/oracle/oradata/GACAPROY/redo02a.log',
-    '/unam-bda/d05/app/oracle/oradata/GACAPROY/redo02b.log',
-    '/unam-bda/d06/app/oracle/oradata/GACAPROY/redo02c.log') size 512m
+    '/unam-bda/d10/app/oracle/oradata/GACAPROY/redo02a.log',
+    '/unam-bda/d11/app/oracle/oradata/GACAPROY/redo02b.log',
+    '/unam-bda/d12/app/oracle/oradata/GACAPROY/redo02c.log') size 512m
 blocksize 512,
   group 3 (
-    '/unam-bda/d04/app/oracle/oradata/GACAPROY/redo03a.log',
-    '/unam-bda/d05/app/oracle/oradata/GACAPROY/redo03b.log',
-    '/unam-bda/d06/app/oracle/oradata/GACAPROY/redo03c.log') size 512m
+    '/unam-bda/d10/app/oracle/oradata/GACAPROY/redo03a.log',
+    '/unam-bda/d11/app/oracle/oradata/GACAPROY/redo03b.log',
+    '/unam-bda/d12/app/oracle/oradata/GACAPROY/redo03c.log') size 512m
 blocksize 512
   maxloghistory 1
   maxlogfiles 16

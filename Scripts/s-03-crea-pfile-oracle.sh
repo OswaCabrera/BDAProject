@@ -16,9 +16,9 @@ fi;
 echo \
 "db_name='${ORACLE_SID}'
 memory_target=1024M
-control_files=(/unam-bda/d04/app/oracle/oradata/${ORACLE_SID^^}/control01.ctl,
-              /unam-bda/d05/app/oracle/oradata/${ORACLE_SID^^}/control02.ctl,
-              /unam-bda/d06/app/oracle/oradata/${ORACLE_SID^^}/control03.ctl)
+control_files=(/unam-bda/d10/app/oracle/oradata/${ORACLE_SID^^}/control01.ctl,
+              /unam-bda/d11/app/oracle/oradata/${ORACLE_SID^^}/control02.ctl,
+              /unam-bda/d12/app/oracle/oradata/${ORACLE_SID^^}/control03.ctl)
 " >$pfile
 echo "Listo"
 echo "Comprobando la existencia y contenido del PFILE"
