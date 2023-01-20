@@ -14,22 +14,22 @@ whenever sqlerror exit rollback;
 disconnect
 
 Prompt conectando como usuario sys
-connect sys/system2 as sysdba
+connect sys/gaca123# as sysdba
 
 -- Prompt Activando pool de Conexiones
 -- alter database open;
 
 whenever sqlerror exit rollback;
 
-exec dbms_connection_pool.start_pool(); 
+-- exec dbms_connection_pool.start_pool(); 
 
-exec dbms_connection_pool.alter_param ('','MAXSIZE','50');
-exec dbms_connection_pool.alter_param ('','MINSIZE','30');
+-- exec dbms_connection_pool.alter_param ('','MAXSIZE','50');
+-- exec dbms_connection_pool.alter_param ('','MINSIZE','30');
 
-exec dbms_connection_pool.alter_param ('','INACTIVITY_TIMEOUT','900');
-exec dbms_connection_pool.alter_param ('','MAX_THINK_TIME','900');
+-- exec dbms_connection_pool.alter_param ('','INACTIVITY_TIMEOUT','900');
+-- exec dbms_connection_pool.alter_param ('','MAX_THINK_TIME','900');
 
-alter system set db_domain='fi.unam';
+alter system set db_domain='fi.unam' scope=spfile;
 
 alter system set dispatchers='(dispatchers=5)(protocol=tcp)';
 
