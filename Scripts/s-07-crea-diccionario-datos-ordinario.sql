@@ -4,7 +4,7 @@
 --@Descripción: Creacion del diccionario de datos
 
 Prompt conectando como usuario sys
-connect sys/system3 as sysdba
+connect sys/gaca123# as sysdba
 
 
 @?/rdbms/admin/catalog.sql
@@ -13,6 +13,6 @@ connect sys/system3 as sysdba
 
 disconnect 
 
-connect system/system3
+connect system/gaca123#
 
 @?/sqlplus/admin/pupbld.sql

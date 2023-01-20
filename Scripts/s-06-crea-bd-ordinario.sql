@@ -3,29 +3,18 @@
 --@Descripción: Creacion de la base de datos
 
 Prompt conectando como usuario sys
-connect sys/system2 as sysdba
+connect sys/gaca123# as sysdba
 
 
-startup nomount
+
+whenever sqlerror exit rollback
 
 create database gacaproy
-  user sys identified by system2
-  user system identified by system2
-  logfile group 1 (
-    '/unam-bda/d10/app/oracle/oradata/GACAPROY/redo01a.log',
-    '/unam-bda/d11/app/oracle/oradata/GACAPROY/redo01b.log',
-    '/unam-bda/d12/app/oracle/oradata/GACAPROY/redo01c.log') size 512m
-blocksize 512,
-  group 2 (
-    '/unam-bda/d10/app/oracle/oradata/GACAPROY/redo02a.log',
-    '/unam-bda/d11/app/oracle/oradata/GACAPROY/redo02b.log',
-    '/unam-bda/d12/app/oracle/oradata/GACAPROY/redo02c.log') size 512m
-blocksize 512,
-  group 3 (
-    '/unam-bda/d10/app/oracle/oradata/GACAPROY/redo03a.log',
-    '/unam-bda/d11/app/oracle/oradata/GACAPROY/redo03b.log',
-    '/unam-bda/d12/app/oracle/oradata/GACAPROY/redo03c.log') size 512m
-blocksize 512
+  user sys identified by gacaproy123#
+  user system identified by gacaproy123#
+  logfile group 1 size 512m blocksize 512,
+  group 2 size 512m blocksize 512,
+  group 3 size 512m blocksize 512
   maxloghistory 1
   maxlogfiles 16
   maxlogmembers 3
@@ -49,7 +38,3 @@ unlimited
   undo tablespace undotbs1
     datafile '/u01/app/oracle/oradata/GACAPROY/default/undotbs01.dbf'
     size 512m reuse autoextend on next 5120k maxsize unlimited;
-
-
-alter user sys identified by system3;
-alter user system identified by system3;

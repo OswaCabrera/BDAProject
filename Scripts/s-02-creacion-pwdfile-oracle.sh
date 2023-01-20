@@ -7,12 +7,9 @@
 
 export ORACLE_SID="gacaproy"
 
-sid=${ORACLE_SID}
-
-archivoPwd="${ORACLE_HOME}/dbs/orapw${sid}"
-
 echo "==> Creando a un nuevo archivo"
 
-orapwd FILE=${archivoPwd} FORMAT=12.2 \
+orapwd FILE='${ORACLE_HOME}/dbs/orapw${ORACLE_SID}' \
+  FORMAT=12.2 \
   FORCE=Y \
   SYS=password
