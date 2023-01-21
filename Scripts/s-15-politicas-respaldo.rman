@@ -1,0 +1,13 @@
+run{
+
+configure controlfile autobackup format for device type disk clear;
+
+configure retention policy to recovery window of 7 days;
+
+configure controlfile autobackup format for device type disk clear;
+
+configure archivelog deletion policy to backed up 1 times to disk;
+
+configure backup optimization on;
+
+}

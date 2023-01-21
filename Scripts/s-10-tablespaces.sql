@@ -1,27 +1,27 @@
 WHENEVER SQLERROR EXIT ROLLBACK;
 
--- CREATE SMALLFILE TABLESPACE VENDORS
---   datafile '/u01/app/oracle/oradata/GACAPROY/vendors01/vendors01.dbf' size 8M,
---            '/u01/app/oracle/oradata/GACAPROY/vendors02/vendors02.dbf' size 8M,
---            '/u01/app/oracle/oradata/GACAPROY/vendors03/vendors03.dbf'size 8M
---     autoextend on next 2M maxsize 32M 
---   extent management local autoallocate;
+CREATE SMALLFILE TABLESPACE VENDORS
+  datafile '/u01/app/oracle/oradata/GACAPROY/vendors01/vendors01.dbf' size 8M,
+           '/u01/app/oracle/oradata/GACAPROY/vendors02/vendors02.dbf' size 8M,
+           '/u01/app/oracle/oradata/GACAPROY/vendors03/vendors03.dbf'size 8M
+    autoextend on next 2M maxsize 32M 
+  extent management local autoallocate;
 
 
--- CREATE SMALLFILE TABLESPACE SERVICES
---   datafile '/u01/app/oracle/oradata/GACAPROY/services01/services01.dbf' size 8M,
---            '/u01/app/oracle/oradata/GACAPROY/services02/services02.dbf' size 8M,
---            '/u01/app/oracle/oradata/GACAPROY/services03/services03.dbf'size 8M
---     autoextend on next 2M maxsize 32M 
---   extent management local autoallocate;
+CREATE SMALLFILE TABLESPACE SERVICES
+  datafile '/u01/app/oracle/oradata/GACAPROY/services01/services01.dbf' size 8M,
+           '/u01/app/oracle/oradata/GACAPROY/services02/services02.dbf' size 8M,
+           '/u01/app/oracle/oradata/GACAPROY/services03/services03.dbf'size 8M
+    autoextend on next 2M maxsize 32M 
+  extent management local autoallocate;
 
 
--- CREATE TABLESPACE CLIENTS
---   datafile '/u01/app/oracle/oradata/GACAPROY/clients01/clients01.dbf' size 8M,
---            '/u01/app/oracle/oradata/GACAPROY/clients02/clients02.dbf' size 8M,
---            '/u01/app/oracle/oradata/GACAPROY/clients03/clients03.dbf'size 8M
---     autoextend on next 2M maxsize 32M 
---   extent management local autoallocate;
+CREATE TABLESPACE CLIENTS
+  datafile '/u01/app/oracle/oradata/GACAPROY/clients01/clients01.dbf' size 8M,
+           '/u01/app/oracle/oradata/GACAPROY/clients02/clients02.dbf' size 8M,
+           '/u01/app/oracle/oradata/GACAPROY/clients03/clients03.dbf'size 8M
+    autoextend on next 2M maxsize 32M 
+  extent management local autoallocate;
 
 --creación del wallet.
 -- ALTER SYSTEM SET ENCRYPTION KEY IDENTIFIED BY "wallet_password";

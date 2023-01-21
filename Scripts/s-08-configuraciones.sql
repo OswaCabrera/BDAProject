@@ -22,5 +22,11 @@ connect sys/gaca123# as sysdba
 -- alter database 
 --   add logfile member '/unam-bda/d11/app/oracle/oradata/GACAPROY/redo03b.log' to group 3;
  
+configure retention policy to recovery window of 7 days;
 
+configure controlfile autobackup format for device type disk clear;
 
+--Necesario?
+configure archivelog deletion policy backed up 2 times tp disk;
+
+configure backup optimization on;

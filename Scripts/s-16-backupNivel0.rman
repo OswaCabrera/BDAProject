@@ -1,0 +1,14 @@
+run {
+shutdown immediate;
+startup mount;
+backup as backupset incremental level 0 database plus archivelog tag first_backup_0;
+alter database open;
+}
+
+run {
+shutdown immediate;
+startup mount;
+backup as backupset incremental level 1 cumulative database plus archivelog tag first_backup_0_1;
+alter database open;
+}
+
