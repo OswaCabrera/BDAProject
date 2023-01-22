@@ -8,7 +8,42 @@ alter database open;
 run {
 shutdown immediate;
 startup mount;
-backup as backupset incremental level 1 cumulative database plus archivelog tag first_backup_0_1;
+backup as backupset incremental level 1 cumulative database plus archivelog tag first_backup_1_1;
+alter database open;
+}
+
+run {
+shutdown immediate;
+startup mount;
+backup as backupset incremental level 1 cumulative database plus archivelog tag first_backup_1_2;
+alter database open;
+}
+
+run {
+shutdown immediate;
+startup mount;
+backup as backupset incremental level 1 cumulative database plus archivelog tag first_backup_1_3;
+alter database open;
+}
+
+run {
+shutdown immediate;
+startup mount;
+backup as backupset incremental level 1 cumulative database plus archivelog tag first_backup_1_4;
+alter database open;
+}
+
+run {
+shutdown immediate;
+startup mount;
+backup as backupset incremental level 1 cumulative database plus archivelog tag first_backup_1_5;
+alter database open;
+}
+
+run {
+shutdown immediate;
+startup mount;
+backup as backupset incremental level 1 cumulative database plus archivelog tag first_backup_1_6;
 alter database open;
 }
 
